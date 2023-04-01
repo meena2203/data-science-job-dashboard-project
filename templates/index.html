@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Data Jobs Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Boostrap Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="static/css/styles.css" media="screen">
+  
+  
+</head>
+
+
+<body>
+
+  <!-- Navbar component added -->
+  {% include "navbar.html" %}
+
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1 class="display-4">Data Job Diggers</h1>
+    <p> Heather Adams, Meena Rai, Tesa Childs-Skelton, Timea Jakab </p>
+  </div>
+
+  <!-- Start of word visual container -->
+  <div class="div-1">
+          
+      <div id="wordChart"></div> 
+    
+  </div>
+    <!-- End of word visual container -->
+  
+    
+    <!-- Start of 'Purpose' container -->
+    <div class="container bg-grey">
+      <div class="row">        
+        <div class="box bg-white my-4 p-4">
+          <h2 class="title text-left">Purpose</h2>
+          <hr>                    
+          
+          <p>
+            Our project focused on creating a Flask Application to analyze DATA Science/ Analytics Jobs data to see which specific roles are in high-demand, average salary distribution per role, job attributes (onsite, remote, hybrid), location and current postings. Hopefully this will help our fellow classmates make an educated decision on picking roles have a high growth opportunity and might be a safer picks during a potential recession.
+          </p>
+        </div>
+      </div>
+        <!-- End of 'Purpose' container -->
+
+    <!-- Start of 'Resources' container -->
+    <div class="container bg-grey">
+      <div class="row">        
+        <div class="box bg-white my-4 p-4">
+          <h2 class="title text-left">Resources</h2>
+          <hr>                  
+          <p>
+            <ul>
+            <li>https://www.kaggle.com/code/hamdy17298/eda-on-data-science-jobs-salaries/data</li>
+            <li>https://www.kaggle.com/datasets/cedricaubin/linkedin-data-analyst-jobs-listings </li>
+            <li>OpenWeatherMap.org. (2012). Retrieved from https://openweathermap.org/  </li>       
+            </ul>
+          </p>
+        </div>
+      </div>
+        <!-- End of 'Resources' container -->
+    
+    </div>   
+
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-data-adapter.min.js"></script>
+    <script src="static/js/word.js"></script>    
+
+  </body>
+  
+</html>

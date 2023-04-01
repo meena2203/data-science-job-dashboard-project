@@ -1,0 +1,33 @@
+
+<!-- Start of navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <div class="container-fluid">
+    <!-- Landing page ('Home') tab to left end-->
+    <a class="navbar-brand rounded ms-2 text-white fw-bold" href="{{ url_for('home')}}">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-haspopup="true" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <!-- Collapsable Tabs to right end-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <!-- Dropdown tab -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Data Jobs Statstics
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{ url_for('salary')}}">Salary Statstics</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('type')}}">Attribute Statstics</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('country')}}">Job Demographic</a></li>
+          </ul>
+        </li>
+        <!-- Link tabs -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('map')}}">Job Postings</a>
+        </li>
+      </ul>
+      </div>
+  </div>
+</nav>
+<!-- End of navbar -->      
+    
